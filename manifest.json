@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Pye",
+  "version": "1.0",
+  "description": "Returns the actual cost of auction items from John Pye",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.johnpyeauctions.co.uk/lot_list.asp*", "https://www.johnpyeauctions.co.uk/lot_details.asp*"
+      ],
+      "js": ["calculate.js"]
+    }
+  ]
+}
