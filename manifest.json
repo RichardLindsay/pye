@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.johnpyeauctions.co.uk/lot_list.asp*", "*://www.johnpyeauctions.co.uk/lot_details.asp*"
+        "*://www.johnpyeauctions.co.uk/lot_list.asp*", "*://www.johnpyeauctions.co.uk/lot_details.asp*", "*://www.johnpyeauctions.co.uk/my_account.asp*"
       ],
       "js": ["calculate.js"]
     },

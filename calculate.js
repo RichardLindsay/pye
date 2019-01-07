@@ -18,6 +18,14 @@ window.updateBidsDetail = function() {
   });
 };
 
+window.updateWatchList = function() {
+  console.log(document.querySelectorAll('td[width="15%"] font'));
+  document.querySelectorAll('font[color="#eE2C54"]').forEach(function(e) {
+    window.addElement('p', window.withBuyersPremium(window.withVat(window.currentBid(e))), e);
+    window.addElement('p', window.withVat(window.currentBid(e)), e);
+  });
+};
+
 // Helper methods
 
 window.addElement = function(type, value, parent) {
@@ -40,3 +48,4 @@ window.withBuyersPremium = function(value) {
 
 window.updateBidsList();
 window.updateBidsDetail();
+window.updateWatchList();
